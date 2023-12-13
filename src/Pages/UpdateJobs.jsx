@@ -49,9 +49,9 @@ const UpdateJobs = () => {
       <Helmet>
         <title>JobVista | Update A Job</title>
       </Helmet>
-      <h2 className=" text-center text-4xl font-bold text-emerald-900 pt-8 pb-8">
+      {/* <h2 className=" text-center text-4xl font-bold text-emerald-900 pt-8 pb-8">
         Update A Job
-      </h2>
+      </h2> */}
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-3">
         <label
           htmlFor=""
