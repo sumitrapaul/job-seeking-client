@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const ContactUs = () => {
   const form = useRef();
@@ -39,6 +40,9 @@ const ContactUs = () => {
 
   return (
     <div className="mt-16">
+       <Helmet>
+        <title>JobVista | Contact Us</title>
+      </Helmet>
       <h3 className="text-4xl text-cyan-900 text-center font-bold mb-12">
         Contact <span className="text-red-900 text-4xl font-bold">Me</span>
       </h3>
