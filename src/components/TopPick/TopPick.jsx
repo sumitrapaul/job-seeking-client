@@ -9,9 +9,9 @@ const TopPick = () => {
 
   return (
     <div className="mt-16">
-      {/* <h3 className="text-4xl text-cyan-900 text-center font-bold mb-12">
+      <h3 className="text-4xl text-cyan-900 text-center font-bold mb-12">
         Video Job Ads: <span className="text-red-900 text-4xl font-bold">Our Top Pick</span>
-      </h3> */}
+      </h3>
    
         <div className="hero">
           <div className="hero-content flex-col lg:flex-row">
