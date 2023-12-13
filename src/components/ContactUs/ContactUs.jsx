@@ -62,14 +62,14 @@ const ContactUs = () => {
                 className="input input-bordered font-bold text-black"
               />
             </div>
-            <div className="form-control w-full mb-6">
+            {/* <div className="form-control w-full mb-6">
               <textarea
                 type="text"
                 name="message"
                 placeholder="Write your message"
                 className="input input-bordered font-bold text-black"
               />
-            </div>
+            </div> */}
             <div className="form-control w-full mb-6">
               <input
                 type="submit"
