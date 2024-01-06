@@ -36,7 +36,7 @@ const AddAJob = () => {
 
       .then((result) => {
       
-        toast.success("successfully job added");
+        toast.success("Successfully job added");
         // console.log(result);
         navigate("/");
         
