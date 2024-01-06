@@ -4,7 +4,7 @@ import { AuthContext } from "../provider/AuthProvider";
 import { Navigate } from "react-router-dom";
 
 const secureData = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://job-seeking-server-virid.vercel.app",
   withCredentials: true,
 });
 const useAxiosSecure = () => {

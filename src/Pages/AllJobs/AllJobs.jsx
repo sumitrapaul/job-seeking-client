@@ -15,7 +15,7 @@ const AllJobs = () => {
   const [search, setSearch] = useState("");
   useEffect(() => {
     const fetchJob = () => {
-      fetch("http://localhost:5000/allJobs")
+      fetch("https://job-seeking-server-virid.vercel.app/allJobs")
         .then((res) => res.json())
         .then((data) => {
           setLoaded(data);

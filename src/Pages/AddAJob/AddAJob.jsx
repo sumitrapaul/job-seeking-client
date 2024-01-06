@@ -25,7 +25,7 @@ const AddAJob = () => {
     data.deadline = selectedDeadline;
     // console.log(data.deadline)
 
-    fetch("http://localhost:5000/addajobs", {
+    fetch("https://job-seeking-server-virid.vercel.app/addajobs", {
       method: "POST",
       headers: {
         "content-type": "application/json",

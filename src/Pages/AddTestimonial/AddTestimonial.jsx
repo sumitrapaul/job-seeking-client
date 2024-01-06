@@ -19,7 +19,7 @@ const AddTestimonial = () => {
         data.userEmail = email;
         data.userName = displayName;
     
-        fetch("http://localhost:5000/addTestimonial", {
+        fetch("https://job-seeking-server-virid.vercel.app/addTestimonial", {
           method: "POST",
           headers: {
             "content-type": "application/json",
