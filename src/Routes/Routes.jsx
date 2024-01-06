@@ -14,6 +14,7 @@ import JobDetails from "../Pages/JobDetails/JobDetails";
 import PrivateRoute from "./PrivateRoute";
 import UpdateJobs from "../Pages/UpdateJobs";
 import MainLayout from "../Layout/MainLayout";
+import AddTestimonial from "../Pages/AddTestimonial/AddTestimonial";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: "/allJobs",
         element: <AllJobs></AllJobs>,
+      },
+      {
+        path: "/addTestimonial",
+        element: <AddTestimonial></AddTestimonial>
       },
       {
         path: "/myJobs",

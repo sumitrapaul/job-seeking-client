@@ -15,6 +15,9 @@ const Navbar = () => {
       <li>
         <NavLink to="/allJobs">All Jobs</NavLink>
       </li>
+      <li>
+        <NavLink to="/addTestimonial">Add Testimonial</NavLink>
+      </li>
       {user?.email ? (
         <>
           <li>
