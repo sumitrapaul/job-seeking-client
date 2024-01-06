@@ -5,6 +5,7 @@ import Gallery from "./Gallery";
 import JobCategory from "./JobCategory";
 import TopPick from "../../components/TopPick/TopPick";
 import ContactUs from "../../components/ContactUs/ContactUs";
+import Testimonial from "../../components/Testimonial";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Gallery></Gallery>
       <TopPick></TopPick>
       <About></About>
+      <Testimonial></Testimonial>
       <ContactUs></ContactUs>
     </div>
   );

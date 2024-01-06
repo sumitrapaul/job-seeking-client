@@ -41,7 +41,7 @@ const ContactUs = () => {
   return (
     <div className="mt-16">
       <h3 className="text-4xl text-cyan-900 text-center font-bold mb-12">
-        Contact <span className="text-red-900 text-4xl font-bold">Me</span>
+        Contact <span className="text-red-900 text-4xl font-bold">Us</span>
       </h3>
      <div className="flex justify-center">
      <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 p-6">
