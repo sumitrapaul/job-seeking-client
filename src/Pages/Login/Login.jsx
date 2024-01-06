@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../provider/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import { useContext } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Toaster } from "react-hot-toast";
 // import axios from "axios";
 
 const Login = () => {
@@ -37,71 +37,77 @@ const Login = () => {
     });
   };
   return (
-    <div className="mt-16">
-      <Helmet>
-        <title>JobVista | Login</title>
-      </Helmet>
-      <div
-        className="hero min-h-screen"
-        style={{ backgroundImage: "url(https://i.ibb.co/NpZb9br/image.png)" }}
-      >
-        <div className="hero-content text-center">
-          <div className="card flex-shrink-0 shadow-2xl bg-base-100">
-            <form onSubmit={handleLogin} className="card-body">
-              <h1 className="text-3xl font-bold text-center text-black">
-                Login now!
-              </h1>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Email</span>
-                </label>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  name="email"
-                  className="input input-bordered text-black"
-                  required
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Password</span>
-                </label>
-                <input
-                  type="password"
-                  placeholder="Enter your password"
-                  name="password"
-                  className="input input-bordered text-black"
-                  required
-                />
-              </div>
-              <div className="form-control mt-6">
-                <input
-                  className="btn bg-gradient-to-r from-cyan-950 to-emerald-900 text-white"
-                  type="submit"
-                  value="Login"
-                />
-              </div>
-            </form>
-            <p className="text-center my-4 text-black">
-              New to this website?{" "}
-              <Link className="text-emerald-900 font-bold" to="/register">
-                Register
-              </Link>
-            </p>
-            <div className="flex">
-              <button
-                onClick={handleGoogle}
-                className="btn bg-gradient-to-r from-cyan-950 to-emerald-900 text-white w-full"
-              >
-                <FcGoogle className="text-3xl"></FcGoogle> Google
-              </button>
-            </div>
-          </div>
+    <div
+    className="mb-16"
+    style={{
+      backgroundImage: `url('https://i.ibb.co/xL35K73/image.png')`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      height: "600px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      marginTop: "30px",
+    }}
+  >
+    <Helmet>
+      <title>JobVista | Login</title>
+    </Helmet>
+    <div className="card flex-shrink-0 w-[400px] md:w-[500px] mx-auto shadow-2xl bg-base-100">
+      <form onSubmit={handleLogin} className="card-body">
+        <div>
+          <h1 className="text-2xl md:text-3xl font-bold my-2 text-center">
+            Login now!
+          </h1>
         </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Email</span>
+          </label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            className="input input-bordered border-emerald-600 text-black font-bold"
+            required
+          />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Password</span>
+          </label>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            name="password"
+            className="input input-bordered border-emerald-600 text-black font-bold"
+            required
+          />
+        </div>
+        <div className="form-control mt-6">
+          <button className="btn text-white font-bold text-xl bg-gradient-to-r from-cyan-950 to-emerald-900 w-full">
+            Login
+          </button>
+        </div>
+      </form>
+
+      <p className="text-center mb-4">
+        Do not have an account? Please{" "}
+        <Link to="/register" className="text-emerald-600 font-bold">
+          Register
+        </Link>
+      </p>
+      <div className="flex justify-center items-center">
+        <button
+          onClick={handleGoogle}
+          className="btn bg-gradient-to-r from-cyan-950 to-emerald-900 text-white text-xl"
+        >
+          Google
+        </button>
       </div>
-      <ToastContainer />
     </div>
+    <Toaster />
+  </div>
   );
 };
 

@@ -25,7 +25,7 @@ const JobDetails = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`https://job-seeking-server-virid.vercel.app/jobdetails/${_id}`)
+    fetch(`http://localhost:5000/jobdetails/${_id}`)
       .then((res) => res.json())
       .then((data) => {
         setJob(data);
@@ -54,7 +54,7 @@ const JobDetails = () => {
     result.jobId = _id;
 
     job.applicants = 1;
-    fetch("https://job-seeking-server-virid.vercel.app/applied", {
+    fetch("http://localhost:5000/applied", {
       method: "POST",
       headers: {
         "content-type": "application/json",

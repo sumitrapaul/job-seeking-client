@@ -16,7 +16,7 @@ const JobCategory = () => {
   // console.log(jobs);
 
   useEffect(() => {
-    fetch("https://job-seeking-server-virid.vercel.app/allJobs")
+    fetch("http://localhost:5000/allJobs")
       .then((res) => res.json())
 
       .then((data) => setJobs(data));

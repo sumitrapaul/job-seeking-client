@@ -58,7 +58,7 @@ const AuthProvider = ({ children }) => {
       if (currentUser) {
         axios
           .post(
-            "https://job-seeking-server-virid.vercel.app/auth",
+            "http://localhost:5000/auth",
             loggedUser,
             {
               withCredentials: true,
@@ -70,7 +70,7 @@ const AuthProvider = ({ children }) => {
       } else {
         axios
           .post(
-            "https://job-seeking-server-virid.vercel.app/logout",
+            "http://localhost:5000/logout",
             loggedUser,
             {
               withCredentials: true,

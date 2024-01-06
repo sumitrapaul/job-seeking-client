@@ -23,7 +23,7 @@ const UpdateJobs = () => {
     data.userName = displayName;
 
     data.deadline = selectedDeadline.toLocaleDateString();
-    fetch(`https://job-seeking-server-virid.vercel.app/updateJobs/${_id}`, {
+    fetch(`http://localhost:5000/updateJobs/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

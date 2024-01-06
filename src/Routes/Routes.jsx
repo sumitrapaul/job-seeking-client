@@ -33,7 +33,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          `https://job-seeking-server-virid.vercel.app/jobdetails/${params._id}`,
+          `http://localhost:5000/jobdetails/${params._id}`,
       },
       {
         path: "/login",
@@ -83,7 +83,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          `https://job-seeking-server-virid.vercel.app/allJobs/${params._id}`,
+          `http://localhost:5000/allJobs/${params._id}`,
       },
     ],
   },
