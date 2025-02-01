@@ -7,7 +7,7 @@ import { usePDF } from "react-to-pdf";
 const AppliedJob = ({ appliedJob }) => {
   const { user } = useContext(AuthContext);
   const { _id, name, email, title, salary, category } = appliedJob;
-  const { toPDF, targetRef } = usePDF({ filename: "page.pdf" });
+  const { toPDF, targetRef } = usePDF({ filename: "page.pdf" })
 
   return (
     <tr ref={targetRef} className="text-xl">
