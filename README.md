@@ -4,7 +4,7 @@ Website deploy link [here](https://weak-tooth.surge.sh/)
 
 # Project Features
 
-* When the user visits my website, he will see a navbar,banner,some category job,job video ads,about us,contact me and gallery,footer.
+* When the user visits my website, he will see a navbar, banner, some category job, job video ads, about us, contact me and gallery, footer.
 
 * When the user clicks on the job details button,if he is not loggedin, he will be taken to the login page,if he is logged in,he    will see the toast and if he clicks on the details button,he will see the details.
 
